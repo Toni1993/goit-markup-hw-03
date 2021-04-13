@@ -51,7 +51,6 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    display: flex;
 }
 
 /* header */
@@ -140,10 +139,6 @@ main {
     height: 252px;
 }
 
-.container, .section-our-team {
-    background: var(--background-color);
-    width: 1600px;
-}
 
 .footer span {
     color: var(--background-color);
