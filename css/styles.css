@@ -44,7 +44,15 @@ img {
     height: auto;
 }
 
-.nav {}
+.container {
+    width: 1560px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: flex;
+}
 
 /* header */
 
@@ -61,6 +69,27 @@ img {
 
 .nav span {
     color: var(--title-text-color);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.contacts-item {}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 
 .link {
@@ -87,10 +116,33 @@ img {
     color: var(--accent-color-accent)
 }
 
+header {
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* footer */
 
 .footer {
     background: var(--background-color-dark);
+    padding-left: 200px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: 252px;
+}
+
+.container, .section-our-team {
+    background: var(--background-color);
+    width: 1600px;
 }
 
 .footer span {
@@ -105,16 +157,9 @@ img {
     letter-spacing: 0.03em;
     color: var(--focus-color-text);
     margin: 0;
+    padding-top: 20px;
+    padding-bottom: 9px;
 }
-
-/* .container, .address {
-    width: 1230px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-} */
 
 /* main secion2 */
 
@@ -126,6 +171,7 @@ img {
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     text-decoration: none;
+    text-align: center;
 }
 
 .title-our-team {
@@ -147,7 +193,10 @@ img {
 /* main section 1 */
 
 .pic-backround {
-    background-image: url(../images/Bg.jpg);
+    background: var(--background-color-dark);
+    width: 1600px;
+    height: 600px;
+    align-items: center;
 }
 
 .pic-backround-title {
@@ -157,6 +206,7 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--focus-color-text);
+    text-align: center;
 }
 
 /*  кнопка Заказать услугу */
@@ -216,6 +266,10 @@ img {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+}
+
+.list-btn {
+    display: flex;
 }
 
 .btn {
