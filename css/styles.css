@@ -115,8 +115,6 @@ img {
 
 .logo-list {
     display: block;
-    /* padding-top: 24px;
-    padding-bottom: 24px; */
     margin-left: 50px;
     font-style: normal;
     font-weight: 500;
@@ -180,8 +178,6 @@ img {
 }
 
 .our-advantages-item {
-    /* margin-bottom: 94px;
-    margin-top: 94px; */
     flex-basis: calc((100% - 30px) / 4);
 }
 
@@ -200,12 +196,10 @@ img {
 .caption-our-team-list {
     display: flex;
     justify-content: space-between;
-    /* margin-bottom: 94px; */
 }
 
 .caption {
     background-color: var(--background-color);
-    /* padding-top: 94px; */
 }
 
 .caption-item {
@@ -364,7 +358,6 @@ img {
     margin-top: 30px;
     flex-basis: calc((100% - 90px) / 3);
     background: var(--focus-color-text);
-    /* border: 1px solid var(--border-color); */
     flex-direction: column;
 }
 
