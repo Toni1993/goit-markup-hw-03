@@ -30,7 +30,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    margin-top: 0;
+    margin: 0;
 }
 
 button {
@@ -168,14 +168,20 @@ img {
 
 /* main secion2 */
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .our-advantages {
     display: flex;
     justify-content: space-between;
+    padding-top: 94px;
 }
 
 .our-advantages-item {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    /* margin-bottom: 94px;
+    margin-top: 94px; */
     flex-basis: calc((100% - 30px) / 4);
 }
 
@@ -194,12 +200,12 @@ img {
 .caption-our-team-list {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 94px;
+    /* margin-bottom: 94px; */
 }
 
 .caption {
     background-color: var(--background-color);
-    padding-top: 94px;
+    /* padding-top: 94px; */
 }
 
 .caption-item {
