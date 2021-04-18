@@ -37,11 +37,14 @@ button {
     cursor: pointer;
 }
 
-ul, a {
+a {
+    text-decoration: none;
+}
+
+ul {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
-    text-decoration: none;
 }
 
 img {
@@ -56,13 +59,12 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 /* nav */
 
-.header {
+header .container {
     display: flex;
 }
 
@@ -75,20 +77,23 @@ img {
     display: flex;
 }
 
+.nav-items li {
+    margin-left: 50px;
+}
+
 .contacts {
     display: flex;
-    margin-left: auto
+    margin-left: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .contacts-item {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-left: 50px;
+    margin-left: 50px;
 }
 
 .logo {
-    padding-right: 43px;
     font-family: Raleway;
     font-weight: bold;
     font-size: 26px;
@@ -108,15 +113,18 @@ img {
 }
 
 .link:hover, .link:focus {
-    color: var(--accent-color-accent)
+    color: var(--accent-color-accent);
+}
+
+header .link, 
+.logo-list {
+    padding: 24px 0;
 }
 
 /* header-list */
 
 .logo-list {
     display: block;
-    margin-left: 50px;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
@@ -125,7 +133,7 @@ img {
 }
 
 .logo-list:hover, .logo-list:focus {
-    color: var(--accent-color-accent)
+    color: var(--accent-color-accent);
 }
 
 /* footer */
@@ -140,28 +148,30 @@ img {
     color: var(--background-color);
 }
 
-.footer-link-item {
-    padding-bottom: 9px;
+.footer .logo {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer-link-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .colfoot {
     color: var(--address-link-color-footer);
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
 .address {
-    padding-top: 20px;
-    padding-bottom: 9px;
+    margin-bottom: 9px;
     font-style: normal;
     text-decoration: none;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--focus-color-text);
-    margin: 0;
 }
 
 /* main secion2 */
@@ -174,11 +184,14 @@ img {
 .our-advantages {
     display: flex;
     justify-content: space-between;
-    padding-top: 94px;
 }
 
 .our-advantages-item {
-    flex-basis: calc((100% - 30px) / 4);
+    width: 270px;
+}
+
+.caption-list {
+    padding-top: 0;
 }
 
 .caption-our-team {
@@ -204,15 +217,17 @@ img {
 
 .caption-item {
     width: 270px;
-    padding-bottom: 20px;
     background: var(--focus-color-text);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+}
+
+.caption-our-team-list-text {
+    padding: 30px;
 }
 
 .title-our-team {
     margin-bottom: 10px;
-    margin-top: 30px;
     text-align: center;
     font-weight: 500;
     font-size: 16px;
@@ -222,7 +237,6 @@ img {
 }
 
 .subtitle-our-team {
-    margin-bottom: 10px;
     text-align: center;
     font-weight: normal;
     font-size: 16px;
@@ -233,14 +247,17 @@ img {
 
 /* main section 1 */
 
+.pic {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background: var(--background-color-dark);
+}
+
 .pic-backround {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 200px;
     width: 1600px;
-    height: 600px;
-    background-color: var(--background-color-dark);
 }
 
 .pic-backround-title {
@@ -258,6 +275,7 @@ img {
 /*  кнопка Заказать услугу */
 
 .main-button {
+    margin-top: 30px;
     width: 200px;
     height: 50px;
     display: block;
@@ -268,13 +286,15 @@ img {
     color: var(--focus-color-text);
     background-color: var(--accent-color-accent);
     cursor: pointer;
-    border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
 }
 
 /* секция  примеры наших работ */
 
 .section-title {
+    margin-bottom: 10px;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
@@ -313,34 +333,33 @@ img {
 
 /* секция  примеры наших работ */
 
-.portfolio-title {
-    margin: 0;
-    display: block;
+.list-pic-items-text {
     padding-top: 20px;
     padding-left: 24px;
     padding-bottom: 20px;
+    padding-right: 24px;
+    border: 1px solid var(--border-color);
+}
+
+.portfolio-title {
+    margin: 0;
     font-weight: bold;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
-    border-left: 1px solid var(--border-color);
-    border-right: 1px solid var(--border-color);
-    ;
+    /* border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color); */
 }
 
 .portfolio-subtitle {
-    margin: 0;
-    padding-left: 24px;
-    padding-bottom: 20px;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
-    border-left: 1px solid var(--border-color);
+    /* border-left: 1px solid var(--border-color);
     border-right: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-    ;
+    border-bottom: 1px solid var(--border-color); */
 }
 
 .list-pic {
@@ -349,7 +368,6 @@ img {
     margin-left: -30px;
     margin-top: -30px;
     padding: 0;
-    margin-bottom: 94px;
 }
 
 .list-pic-items {
@@ -364,7 +382,6 @@ img {
 .btn-list {
     display: flex;
     justify-content: center;
-    margin-top: 94px;
     margin-bottom: 50px;
 }
 
@@ -383,12 +400,11 @@ img {
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    cursor: pointer;
 }
 
 .btn:hover, .btn:focus {
     background: var(--accent-color-accent);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(#000, .1), 0px 1px 2px rgba(#000, 0.08), 0px 2px 2px rgba(#000, 0.12);
     border-radius: 4px;
     color: var(--focus-color-text);
     border: none;
