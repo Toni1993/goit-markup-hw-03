@@ -179,6 +179,7 @@ header .link,
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    
 }
 
 .our-advantages {
@@ -339,6 +340,7 @@ header .link,
     padding-bottom: 20px;
     padding-right: 24px;
     border: 1px solid var(--border-color);
+    border-top: none;
 }
 
 .portfolio-title {
@@ -348,8 +350,7 @@ header .link,
     line-height: 2.0;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
-    /* border-left: 1px solid var(--border-color);
-    border-right: 1px solid var(--border-color); */
+
 }
 
 .portfolio-subtitle {
@@ -357,9 +358,6 @@ header .link,
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
-    /* border-left: 1px solid var(--border-color);
-    border-right: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color); */
 }
 
 .list-pic {
