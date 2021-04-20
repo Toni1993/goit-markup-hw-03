@@ -75,17 +75,16 @@ header .container {
 
 .nav-items {
     display: flex;
+    margin-left: 93px;
 }
 
-.nav-items li {
+.nav-items li:not(:first-child) {
     margin-left: 50px;
 }
 
 .contacts {
     display: flex;
     margin-left: auto;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .contacts-item {
@@ -116,8 +115,8 @@ header .container {
     color: var(--accent-color-accent);
 }
 
-header .link, 
-.logo-list {
+header .link, .logo-list {
+    display: block;
     padding: 24px 0;
 }
 
@@ -179,7 +178,6 @@ header .link,
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    
 }
 
 .our-advantages {
@@ -350,7 +348,6 @@ header .link,
     line-height: 2.0;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
-
 }
 
 .portfolio-subtitle {
@@ -386,10 +383,8 @@ header .link,
 .btn {
     margin-left: 4px;
     margin-right: 4px;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding: 6px 22px;
     display: flex;
-    display: block;
     background: var(--background-color);
     color: var(--title-text-color);
     border-radius: 4px;
